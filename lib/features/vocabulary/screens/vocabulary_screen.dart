@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'huruf_isyarat_detail.dart';
+import '../../../huruf_isyarat_detail.dart';
+import '../../navigation/main_navigation.dart';
 
-class HurufIsyaratPage extends StatelessWidget {
-  const HurufIsyaratPage({Key? key}) : super(key: key);
+class VocabularyScreen extends StatelessWidget {
+  const VocabularyScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +11,8 @@ class HurufIsyaratPage extends StatelessWidget {
       26,
       (i) => String.fromCharCode(65 + i),
     );
-    // Contoh data dinamis untuk label, gif, dan gambar objek
+
+    // Data untuk huruf isyarat
     final Map<String, Map<String, String>> hurufData = {
       'A': {
         'label': 'A untuk Apel',
@@ -156,10 +158,12 @@ class HurufIsyaratPage extends StatelessWidget {
             elevation: 0,
             leading: IconButton(
               icon: const Icon(Icons.arrow_back, color: Color(0xFF4ECDC4)),
-              onPressed: () => Navigator.of(context).pop(),
+              onPressed: () {
+                MainNavigation.of(context)?.switchTab(0);
+              },
             ),
             title: Text(
-              'Mari kita mulai latihan',
+              'Huruf Isyarat',
               style: TextStyle(
                 color: const Color(0xFF343A40),
                 fontWeight: FontWeight.w600,
@@ -364,21 +368,21 @@ class _LetterCard extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
               ),
 
-              // const SizedBox(height: 8),
+              const SizedBox(height: 8),
 
-              // Arrow Icon - Removed for cleaner design
-              // Container(
-              //   padding: const EdgeInsets.all(4),
-              //   decoration: BoxDecoration(
-              //     color: const Color(0xFF4ECDC4),
-              //     borderRadius: BorderRadius.circular(8),
-              //   ),
-              //   child: const Icon(
-              //     Icons.arrow_forward_ios,
-              //     color: Colors.white,
-              //     size: 12,
-              //   ),
-              // ),
+              // Arrow Icon
+              Container(
+                padding: const EdgeInsets.all(4),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF4ECDC4),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.white,
+                  size: 12,
+                ),
+              ),
             ],
           ),
         ),

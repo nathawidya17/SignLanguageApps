@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   ar_flutter_plugin_updated: ^0.0.1
   path_provider: ^2.1.5
+  flutter_tts: ^4.2.3
+  vector_math: ^2.1.4
 
 dev_dependencies:
   flutter_test:
