@@ -99,8 +99,11 @@ class KosakataIsyaratPage extends StatelessWidget {
                     onArTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) =>
-                              ArScreen(selectedObject: data['nama']),
+                          builder: (context) => ArScreen(
+                            selectedObject: data['nama'],
+                            kosakataData: kosakataData,
+                            initialIndex: index,
+                          ),
                         ),
                       );
                     },
