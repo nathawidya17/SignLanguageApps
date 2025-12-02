@@ -1,11 +1,12 @@
-# Tangan Pintar (Aplikasi Edukasi Isyarat Tunarungu)
+# Isyaratku (Aplikasi Edukasi Isyarat Tunarungu)
 
-Aplikasi Flutter edukasi interaktif untuk belajar huruf dan kosakata bahasa isyarat Indonesia, dilengkapi dengan fitur Augmented Reality (AR) untuk pengalaman belajar yang lebih menarik.
+Aplikasi Flutter edukasi interaktif untuk belajar huruf, angka, dan kosakata bahasa isyarat Indonesia, dilengkapi dengan fitur Augmented Reality (AR) untuk pengalaman belajar yang lebih menarik.
 
 ## ✨ Fitur Utama
 - **Belajar Huruf Isyarat:**
   - Daftar abjad A-Z dengan animasi/gif isyarat dan gambar objek.
   - Halaman detail setiap huruf dengan media interaktif.
+  - **Text to Speech (TTS):** Pengguna dapat mendengarkan pengucapan label huruf/kosakata di halaman detail.
 - **Belajar Kosakata Isyarat:**
   - Daftar kosakata populer dengan animasi/gif isyarat, deskripsi, dan model 3D AR.
 - **Augmented Reality (AR):**
@@ -49,6 +50,7 @@ assets/
 
 ## 🧩 Plugin & Library Utama
 - [`ar_flutter_plugin_updated`](https://pub.dev/packages/ar_flutter_plugin_updated) — AR support
+- [`flutter_tts`](https://pub.dev/packages/flutter_tts) — Text to Speech (TTS)
 - `path_provider`, `vector_math`, dll.
 
 ## 🙏 Kredit

@@ -44,3 +44,19 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
+update.md
+progress.md
+analysisis.md
+analysisis_options.yaml
+build_script.sh
+BUILD_GUIDE.md
+build_script.bat
+design_system.md
+design_thinking.md
+figma_sus_template.md
+implementation_plan.md
+new_update.md
+sus_evaluation.md
+sus_score_65_percent.md
+sus_score_template_blank.md
+ui_mockup.md

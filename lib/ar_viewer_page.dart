@@ -50,7 +50,11 @@ class _ArViewerPageState extends State<ArViewerPage> {
   ) async {
     arSessionManager = sessionManager;
     arObjectManager = objectManager;
-    await arSessionManager?.onInitialize(showAnimatedGuide: false);
+    await arSessionManager?.onInitialize(
+      showAnimatedGuide: false,
+      handlePans: true,
+      handleRotation: true,
+    );
     await arObjectManager?.onInitialize();
     // Copy asset ke file system
     final localPath = await getLocalAssetPath(widget.pathGlb);
